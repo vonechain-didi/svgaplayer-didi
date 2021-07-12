@@ -1,0 +1,44 @@
+{
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "svgaplayer-didi",
+    "name": "svgaplayer-didi",
+    "escapedName": "svgaplayer-didi",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_spec": "svgaplayer-didi",
+  "author": {
+    "name": "Lares Wang"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "http-server": "^0.10.0",
+    "pako": "^1.0.6",
+    "protobufjs": "^6.8.0",
+    "uglify-js": "^3.1.2",
+    "value-animator": "git+https://github.com/yyued/value-animator.git",
+    "webpack": "^3.6.0"
+  },
+  "homepage": "https://github.com/vonechain-didi/svgaplayer-didi",
+  "main": "./build/svga.min.js",
+  "name": "svgaplayer-didi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vonechain-didi/svgaplayer-didi"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "http-server ./ & webpack -w & open http://127.0.0.1:8080/tests/"
+  },
+  "types": "index.d.ts",
+  "version": "1.0.0"
+}
